@@ -22,6 +22,13 @@
 					<ul class="nav navbar-nav">
 						<li class="active"><a href="<c:url value="/"/> ">Home</a></li>
 						<li><a href="<c:url value="/products"/> ">Products</a></li>
+						<li><a href="<c:url value="/users"/> ">Users</a></li>
+						<li><a href="<c:url value="/todayamount"/> ">TodayAmount</a></li>
+						<li><a href="<c:url value="/ranking"/> ">Ranking</a></li>
+						<li><a href="<c:url value="/chart"/> ">Chart</a></li>
+						<li><a href="<c:url value="/mynicotine"/> ">My nicotine</a></li>
+						<li><a href="<c:url value="/fargerstrom"/> ">FagerStrom Test</a></li>
+						
 						<li><a href="#contact">Contact</a></li>
 
 						<li class="dropdown"><a href="#" class="dropdown-toggle"

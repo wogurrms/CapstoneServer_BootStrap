@@ -57,4 +57,40 @@
     <put-attribute name="title" value="Product Detail" />
     <put-attribute name="body" value="/WEB-INF/views/productdetail.jsp" />
   </definition>
+   <!-- 상속받아서 사용함 -->
+  <definition name="productdetail" extends="base">
+    <put-attribute name="title" value="Product Detail" />
+    <put-attribute name="body" value="/WEB-INF/views/productdetail.jsp" />
+  </definition>
+  
+   <!-- 유저 테이블  -->
+  <definition name="users" extends="base">
+    <put-attribute name="title" value="Users Table" />
+    <put-attribute name="body" value="/WEB-INF/views/users.jsp" />
+  </definition>
+   <!-- 오늘 핀 담배 갯수 -->
+  <definition name="todayamount" extends="base">
+    <put-attribute name="title" value="My Today Smoking Count" />
+    <put-attribute name="body" value="/WEB-INF/views/todayamount.jsp" />
+  </definition>
+   <!-- 시간대 별 차트  -->
+  <definition name="chart" extends="base">
+    <put-attribute name="title" value="My Smoking Chart" />
+    <put-attribute name="body" value="/WEB-INF/views/chart.jsp" />
+  </definition>
+   <!-- 체내 니코틴 양  -->
+  <definition name="mynicotine" extends="base">
+    <put-attribute name="title" value="My Current Nicotine" />
+    <put-attribute name="body" value="/WEB-INF/views/mynicotine.jsp" />
+  </definition>
+   <!-- 파거스트롬 테스트  -->
+  <definition name="fagerstrom" extends="base">
+    <put-attribute name="title" value="My Fagerstrom Test" />
+    <put-attribute name="body" value="/WEB-INF/views/fagerstrom.jsp" />
+  </definition>
+   <!-- 랭킹 -->
+  <definition name="ranking" extends="base">
+    <put-attribute name="title" value="My Ranking in All Users" />
+    <put-attribute name="body" value="/WEB-INF/views/ranking.jsp" />
+  </definition>
 </tiles-definitions>
