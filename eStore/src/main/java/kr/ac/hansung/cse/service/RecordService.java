@@ -34,4 +34,8 @@ public class RecordService {
 		recordDao.editRecord(record);
 	}
 
+	public int getTodayAmount() {
+		return recordDao.getTodayAmount();
+	}
+
 }

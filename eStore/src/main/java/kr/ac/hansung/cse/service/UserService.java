@@ -31,7 +31,12 @@ public class UserService {
 		return userDao.getUserById(id);
 	}
 
+	public User getUserByNick(String nick) {
+		return userDao.getUserByNick(nick);
+	}
+	
 	public void editUser(User user) {
 		userDao.editUser(user);
 	}
+
 }

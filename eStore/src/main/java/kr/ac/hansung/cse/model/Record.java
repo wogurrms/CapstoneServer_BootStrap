@@ -1,5 +1,7 @@
 package kr.ac.hansung.cse.model;
 
+import java.util.Date;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -20,7 +22,7 @@ public class Record {
 	@GeneratedValue
 	@Column(name="record_id")
 	private int record_id;
-	private String date;
+	private Date date;
 	@ManyToOne
 	@JoinColumn(name="user_id")
 	private User user;

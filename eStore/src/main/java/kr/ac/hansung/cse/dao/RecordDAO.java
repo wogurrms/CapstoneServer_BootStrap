@@ -50,4 +50,11 @@ public class RecordDAO {
 		session.saveOrUpdate(record);
 		session.flush();
 	}
+
+	public int getTodayAmount() {
+		Session session = sessionFactory.getCurrentSession();
+		Query query = session.createQuery("select count(*) from Record r where r.date > curdate()");
+		Long todayAmount = (Long)query.uniqueResult();
+		return todayAmount.intValue();
+	}
 }

@@ -50,4 +50,13 @@ public class UserDAO {
 		session.saveOrUpdate(user);
 		session.flush();
 	}
+
+	public User getUserByNick(String nick) {
+		Session session = sessionFactory.getCurrentSession();
+		Query query = session.createQuery("from User where nick=:nick");
+		query.setParameter("nick", nick);
+		
+		User user = (User) query.uniqueResult();
+		return user;
+	}
 }

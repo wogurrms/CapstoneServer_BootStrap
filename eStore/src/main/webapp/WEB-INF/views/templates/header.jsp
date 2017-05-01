@@ -21,19 +21,20 @@
 				<div id="navbar" class="navbar-collapse collapse">
 					<ul class="nav navbar-nav">
 						<li class="active"><a href="<c:url value="/"/> ">Home</a></li>
-						<li><a href="<c:url value="/products"/> ">Products</a></li>
 						<li><a href="<c:url value="/users"/> ">Users</a></li>
 						<li><a href="<c:url value="/todayamount"/> ">TodayAmount</a></li>
 						<li><a href="<c:url value="/ranking"/> ">Ranking</a></li>
 						<li><a href="<c:url value="/chart"/> ">Chart</a></li>
 						<li><a href="<c:url value="/mynicotine"/> ">My nicotine</a></li>
 						<li><a href="<c:url value="/fargerstrom"/> ">FagerStrom Test</a></li>
+						<li><a href="<c:url value="/insertUser"/> ">InsertUser</a></li>
+						<li><a href="<c:url value="/insertRecord"/> ">InsertRec</a></li>
 						
-						<li><a href="#contact">Contact</a></li>
-
-						<li class="dropdown"><a href="#" class="dropdown-toggle"
-							data-toggle="dropdown" role="button" aria-haspopup="true"
-							aria-expanded="false">Dropdown <span class="caret"></span></a>
+						
+						
+<!-- 						<li class="dropdown"><a href="#" class="dropdown-toggle" -->
+<!-- 							data-toggle="dropdown" role="button" aria-haspopup="true" -->
+<!-- 							aria-expanded="false">Dropdown <span class="caret"></span></a> -->
 							<ul class="dropdown-menu">
 								<li><a href="#">Action</a></li>
 								<li><a href="#">Another action</a></li>

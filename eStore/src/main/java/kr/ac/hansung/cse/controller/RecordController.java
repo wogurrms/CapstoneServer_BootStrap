@@ -1,5 +1,7 @@
 package kr.ac.hansung.cse.controller;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,5 +31,12 @@ public class RecordController {
 		model.addAttribute("record",record);
 		return "recorddetail";
 	}
-
+	
+	@RequestMapping("/todayamount")
+	public String getTodayAmount(Model model){
+	
+		int todayAmount = recordService.getTodayAmount();
+		model.addAttribute("todayAmount",todayAmount);
+		return "todayamount";
+	}
 }
