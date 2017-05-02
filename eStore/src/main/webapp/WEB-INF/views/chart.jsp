@@ -19,17 +19,21 @@ function getContextPath(){
 
 function drawBasic() {
 
-
     var jsonData = $.ajax({
-        url: getContextPath()+"/charFromRecordToRest",
+        url: getContextPath()+"/chartFromRecordToRest",
         dataType: "json",
-        async: false
-        }).responseText;
+        async: false,
+        }).done(function(response,status,request){
+        	alert(request.responseText)
+        }).fail(function(){
+        	alert("fail")
+        });
+   
         
     // Create our data table out of JSON data loaded from server.
     var data = new google.visualization.DataTable(jsonData);
 
-      var options = {
+    var options = {
         hAxis: {
           title: 'Date'
         },
@@ -42,6 +46,7 @@ function drawBasic() {
 
       chart.draw(data, options);
     }
+    
 </script>
 
 
