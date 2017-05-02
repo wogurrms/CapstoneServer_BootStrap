@@ -26,7 +26,7 @@
 						<li><a href="<c:url value="/ranking"/> ">Ranking</a></li>
 						<li><a href="<c:url value="/chartFromRecord"/> ">Chart</a></li>
 						<li><a href="<c:url value="/mynicotine"/> ">My nicotine</a></li>
-						<li><a href="<c:url value="/fargerstrom"/> ">FagerStrom Test</a></li>
+						<li><a href="<c:url value="/fagerstrom"/> ">FagerStrom Test</a></li>
 						<li><a href="<c:url value="/insertUser"/> ">InsertUser</a></li>
 						<li><a href="<c:url value="/insertRecord"/> ">InsertRec</a></li>
 						<li><a href="<c:url value="/insertYesterDayRecord"/> ">InsertYesRec</a></li>

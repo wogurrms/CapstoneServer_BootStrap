@@ -14,5 +14,13 @@ public class HomeController {
 	public String home() {
 		return "home";
 	}
+	@RequestMapping(value = "/fagerstrom", method = RequestMethod.GET)
+	public String fagerstrom() {
+		return "fagerstrom";
+	}
+	@RequestMapping(value = "/mynicotine", method = RequestMethod.GET)
+	public String mynicotine() {
+		return "mynicotine";
+	}
 	
 }

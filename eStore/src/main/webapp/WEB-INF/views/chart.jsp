@@ -23,24 +23,14 @@ function drawBasic() {
         url: getContextPath()+"/chartFromRecordToRest",
         dataType: "json",
         async: false,
-        }).done(function(response,status,request){
-        	alert(request.responseText)
-        }).fail(function(){
-        	alert("fail")
-        });
-   
+        }).responseText;
+    
+    var array  = JSON.parse(jsonData);
         
     // Create our data table out of JSON data loaded from server.
-    var data = new google.visualization.DataTable(jsonData);
+    var data = new google.visualization.DataTable(array);
+    
 
-    var options = {
-        hAxis: {
-          title: 'Date'
-        },
-        vAxis: {
-          title: 'Count'
-        }
-      };
 
       var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
 

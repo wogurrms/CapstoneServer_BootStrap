@@ -16,6 +16,12 @@
 
 <title><tiles:insertAttribute name="title" /></title>
 
+
+<!-- funkRadio CSS -->
+<link
+	href="<c:url value="/resources/css/funkyRadio.css"/>"
+	rel="stylesheet">
+
 <!-- Bootstrap core CSS -->
 <link href="<c:url value="/resources/css/bootstrap.min.css"/>"
 	rel="stylesheet">
