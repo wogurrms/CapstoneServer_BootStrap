@@ -14,9 +14,9 @@
 				</tr>
 			</thead>
 			<tbody>
-					<tr>
-						<td>${todayAmount}</td>
-					</tr>
+				<tr>
+					<td>${responseData.todayAmount}/${responseData.avg}</td>
+				</tr>
 			</tbody>
 		</table>
 	</div>

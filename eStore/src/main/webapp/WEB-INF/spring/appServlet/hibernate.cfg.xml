@@ -14,7 +14,7 @@
 		<property name="hibernate.show_sql">true</property>
 
 		<!-- manage automatic database creation -->
-<!-- 		<property name="hibernate.hbm2ddl.auto">update</property> -->
+		<property name="hibernate.hbm2ddl.auto">update</property>
 
 		<!-- mappings for annotated classes -->
 		<mapping class="kr.ac.hansung.cse.model.Record" />

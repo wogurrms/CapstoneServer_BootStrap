@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import kr.ac.hansung.cse.dao.RecordDAO;
+import kr.ac.hansung.cse.model.ChartResponseData;
 import kr.ac.hansung.cse.model.Record;
 
 @Service
@@ -36,6 +37,14 @@ public class RecordService {
 
 	public int getTodayAmount() {
 		return recordDao.getTodayAmount();
+	}
+
+	public float getAvgAmount() {
+		return recordDao.getAvgAmount();
+	}
+
+	public List<ChartResponseData> getChartResponseData() {
+		return recordDao.getChartResponseData();
 	}
 
 }
